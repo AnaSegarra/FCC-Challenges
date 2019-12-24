@@ -39,3 +39,39 @@ function findLongestWordLength(str) {
 }
 
 /* ==================================== */
+
+// Return Largest Numbers in Arrays
+function largestOfFour(arr) {
+	let arrMax = [];
+	arr.forEach(array => arrMax.push(Math.max(...array.flat())));
+	return arrMax;
+}
+
+/* ==================================== */
+
+// Confirm the Ending
+function confirmEnding(str, target) {
+	return str.lastIndexOf(target) === str.length - target.length;
+}
+
+/* ==================================== */
+
+// Repeat a String Repeat a String
+function repeatStringNumTimes(str, num) {
+	let result = '';
+	if (num < 0) {
+		return result;
+	} else {
+		for (let i = 0; i < num; i++) {
+			result += str;
+		}
+	}
+	return result;
+}
+
+/* ==================================== */
+
+// Truncate a String
+function truncateString(str, num) {
+	return str.length > num ? str.slice(0, num) + '...' : str;
+}
