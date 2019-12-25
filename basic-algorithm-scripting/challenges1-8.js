@@ -18,7 +18,7 @@ function reverseString(str) {
 
 /* ==================================== */
 
-// Factorialize a Number
+// Factorialize a number
 function factorialize(num) {
 	let result = 1;
 	for (let i = 1; i <= num; i++) {
@@ -29,7 +29,7 @@ function factorialize(num) {
 
 /* ==================================== */
 
-// Find the Longest Word in a String
+// Find the longest word in a string
 function findLongestWordLength(str) {
 	let longestWord = '';
 	str
@@ -40,7 +40,7 @@ function findLongestWordLength(str) {
 
 /* ==================================== */
 
-// Return Largest Numbers in Arrays
+// Return largest numbers in arrays
 function largestOfFour(arr) {
 	let arrMax = [];
 	arr.forEach(array => arrMax.push(Math.max(...array.flat())));
@@ -49,14 +49,14 @@ function largestOfFour(arr) {
 
 /* ==================================== */
 
-// Confirm the Ending
+// Confirm the ending
 function confirmEnding(str, target) {
 	return str.lastIndexOf(target) === str.length - target.length;
 }
 
 /* ==================================== */
 
-// Repeat a String Repeat a String
+// Repeat a string repeat a string
 function repeatStringNumTimes(str, num) {
 	let result = '';
 	if (num < 0) {
@@ -71,7 +71,7 @@ function repeatStringNumTimes(str, num) {
 
 /* ==================================== */
 
-// Truncate a String
+// Truncate a string
 function truncateString(str, num) {
 	return str.length > num ? str.slice(0, num) + '...' : str;
 }
