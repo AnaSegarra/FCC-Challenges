@@ -27,3 +27,28 @@ function diffArray(arr1, arr2) {
 	});
 	return newArr;
 }
+
+/* ==================================== */
+
+// Seek and destroy
+function destroyer(arr) {
+	let args = Array.from(arguments).slice(1);
+	let newArr = [];
+	for (let i = 0; i < arr.length; i++) {
+		if (!args.includes(arr[i])) {
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
+}
+
+/* ==================================== */
+
+// Wherefore art thou
+
+/* ==================================== */
+
+// Spinal tap case
+function spinalCase(str) {
+	return str.split(/\s|_|(?=[A-Z])/).join('-').toLowerCase();
+}
