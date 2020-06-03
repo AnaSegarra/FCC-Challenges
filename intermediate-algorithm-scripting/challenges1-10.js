@@ -45,6 +45,15 @@ function destroyer(arr) {
 /* ==================================== */
 
 // Wherefore art thou
+function whatIsInAName(collection, source) {
+	var sourceKeys = Object.keys(source);
+	return collection.filter(item => {
+		for (let i = 0; i < sourceKeys.length; i++) {
+			if (!item.hasOwnProperty(sourceKeys[i]) || item[sourceKeys[i]] !== source[sourceKeys[i]]) return false;
+		}
+		return true;
+	});
+}
 
 /* ==================================== */
 
